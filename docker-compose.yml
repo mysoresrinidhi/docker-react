@@ -11,11 +11,4 @@ services:
       - /usr/app/node_modules
       - .:/usr/app
 
-  test:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - /usr/app/node_modules
-      - .:/usr/app
-    command: ["npm", "run", "test"]
+
